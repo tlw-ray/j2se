@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://www.wfmc.org/2002/XPDL1.0" xmlns:xpdl="http://www.wfmc.org/2002/XPDL1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xyz="http://www.xyzeorder.com/workflow">   
+ <WorkflowProcesses>
+  <WorkflowProcess Id="1" Name="standardworkflow" AccessLevel="PRIVATE">   
+	  <ProcessHeader/>   
+	  <xpdl:FormalParameters xmlns:xpdl="http://www.wfmc.org/2002/XPDL1.0" >KKK</xpdl:FormalParameters>   
+	  <xpdl:DataFields>   
+		  <xpdl:DataField Id="applicationtable" IsArray="FALSE">   
+			  <DataType>   
+			  	<DeclaredType Id="ApplicationTableType"/>   
+			  </DataType>   
+		  </xpdl:DataField>   
+	  </xpdl:DataFields>
+  </WorkflowProcess>
+ </WorkflowProcesses>   
+</Package>

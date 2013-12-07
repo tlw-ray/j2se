@@ -1,0 +1,14 @@
+<html>
+<body>
+<applet code=tlw.example.applet.JavaScriptCallApplet.class name="appletname" width="200" height="200" codebase="../../../../bin/" >
+</applet>
+<input type="button" onclick="change()" value="abc" />
+<script language="javaScript">
+function change(){
+	alert('change');
+	document.appletname.setLabelText('Hello123!');
+}
+</SCRIPT>
+</script>
+</body>
+</html>
