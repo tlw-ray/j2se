@@ -26,9 +26,15 @@ import java.util.logging.Logger;
 @SuppressWarnings("unchecked")
 public class TextFileAdapter {
 	public static void main(String[] args){
-		File file=new File("D:\\app.java\\workspace\\TLW_LIB\\src\\tlw\\swing\\JConsoleTextArea.java");
-		TextFileAdapter jta=new TextFileAdapter(file);
-		jta.saveFile("UTF-8");
+		File fileGB=new File("C:\\Users\\liwei\\Desktop\\GB2312.txt");
+		TextFileAdapter jtaGB=new TextFileAdapter(fileGB);
+		System.out.println(jtaGB.getFileEncoder());
+		
+		File fileUTF=new File("C:\\Users\\liwei\\Desktop\\UTF-8.txt");
+		TextFileAdapter jtaUTF=new TextFileAdapter(fileUTF);
+		System.out.println(jtaUTF.getFileEncoder());
+		
+//		jta.saveFile("UTF-8");
 	}
 	private File file;
 	private String fileContent = "";
