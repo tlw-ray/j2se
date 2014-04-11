@@ -3,6 +3,7 @@ package com.tlw.eg.thread.wait_notify;
 /**
  * @author liwei.tang@magustek.com
  * @since 2014年2月5日 上午10:48:50
+ * 
  * 服务线程处理一次数据，客户线程读写一次数据；读写可并发不分先后；
  * 服务线程与两个客户端线程交替执行；
  * 
