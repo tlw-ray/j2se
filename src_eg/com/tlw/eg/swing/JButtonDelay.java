@@ -17,7 +17,7 @@ public class JButtonDelay {
 		jbutton.addActionListener(new ActionListener(){
 			long oldClick=System.currentTimeMillis();
 			long newClick=System.currentTimeMillis();
-			long minmumClickSpan=200;
+			long minmumClickSpan=5000;
 			long clickSpan=0;
 			boolean begin=false;
 			@Override
