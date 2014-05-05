@@ -15,7 +15,7 @@ import javax.swing.JSlider;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-public class AffineTransform extends JPanel {
+public class AffineTransformHouse extends JPanel {
 	/**
 	 * 
 	 */
@@ -41,7 +41,7 @@ public class AffineTransform extends JPanel {
 
 	float width = 1.0f;
 
-	public AffineTransform() {
+	public AffineTransformHouse() {
 		super(new BorderLayout());
 		JPanel controlPanel = new JPanel(new GridLayout(3, 3));
 		add(controlPanel, BorderLayout.NORTH);
@@ -163,7 +163,7 @@ public class AffineTransform extends JPanel {
 			Line2D line5 = new Line2D.Float(200f, 100f, 200f, 200f);
 			Line2D line6 = new Line2D.Float(140f, 200f, 140f, 150f);
 			Line2D line7 = new Line2D.Float(140f, 150f, 160f, 150f);
-			Line2D line8 = new Line2D.Float(160f, 150f, 160f, 200f);
+//			Line2D line8 = new Line2D.Float(160f, 150f, 160f, 200f);
 
 			g2D.draw(line1);
 			g2D.draw(line2);
@@ -172,13 +172,13 @@ public class AffineTransform extends JPanel {
 			g2D.draw(line5);
 			g2D.draw(line6);
 			g2D.draw(line7);
-			g2D.draw(line8);
+//			g2D.draw(line8);
 		}
 	}
 
 	public static void main(String[] a) {
 		JFrame f = new JFrame();
-		f.getContentPane().add(new AffineTransform());
+		f.getContentPane().add(new AffineTransformHouse());
 		f.setDefaultCloseOperation(1);
 		f.setSize(700, 550);
 		f.setVisible(true);
