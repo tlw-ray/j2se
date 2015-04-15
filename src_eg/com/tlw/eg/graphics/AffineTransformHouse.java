@@ -2,12 +2,13 @@ package com.tlw.eg.graphics;
 
 import java.awt.BasicStroke;
 import java.awt.BorderLayout;
-import java.awt.Canvas;
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.GridLayout;
 import java.awt.geom.Line2D;
 
+import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -90,6 +91,7 @@ public class AffineTransformHouse extends JPanel {
 		add(widthPanel, BorderLayout.SOUTH);
 
 		canvas = new MyCanvas();
+		canvas.setBorder(BorderFactory.createLineBorder(Color.GREEN));
 		add(canvas, "Center");
 	}
 
@@ -136,15 +138,13 @@ public class AffineTransformHouse extends JPanel {
 		return slider;
 	}
 
-	class MyCanvas extends Canvas {
-		/**
-		 * 
-		 */
+	class MyCanvas extends JPanel {
 		private static final long serialVersionUID = 2052481364978309344L;
 
 		public void paint(Graphics g) {
+			super.paint(g);
 			Graphics2D g2D = (Graphics2D) g;
-
+			
 			g2D.translate(transX, transY);
 			g2D.rotate(rotateTheta, rotateX, rotateY);
 			g2D.scale(scaleX, scaleY);
@@ -163,7 +163,8 @@ public class AffineTransformHouse extends JPanel {
 			Line2D line5 = new Line2D.Float(200f, 100f, 200f, 200f);
 			Line2D line6 = new Line2D.Float(140f, 200f, 140f, 150f);
 			Line2D line7 = new Line2D.Float(140f, 150f, 160f, 150f);
-//			Line2D line8 = new Line2D.Float(160f, 150f, 160f, 200f);
+			Line2D line8 = new Line2D.Float(160f, 150f, 160f, 200f);
+			Line2D line9 = new Line2D.Float(200f, 200f, 0f, 0f);
 
 			g2D.draw(line1);
 			g2D.draw(line2);
@@ -172,7 +173,8 @@ public class AffineTransformHouse extends JPanel {
 			g2D.draw(line5);
 			g2D.draw(line6);
 			g2D.draw(line7);
-//			g2D.draw(line8);
+			g2D.draw(line8);
+			g2D.draw(line9);
 		}
 	}
 
