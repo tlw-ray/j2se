@@ -38,6 +38,13 @@ public class HelloImpl extends UnicastRemoteObject implements IHello {
      */ 
     public String sayHelloToSomeBody(String someBodyName) throws RemoteException { 
         return "你好，" + someBodyName + "!"; 
-    } 
+    }
+    
+    SomeObject someObject=new SomeObject();
+
+	@Override
+	public SomeObject getSomeObject() {
+		return someObject;
+	} 
 
 }

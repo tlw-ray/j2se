@@ -15,7 +15,14 @@ public class HelloClient {
             //在RMI服务注册表中查找名称为RHello的对象，并调用其上的方法 
             IHello rhello =(IHello) Naming.lookup("rmi://localhost:8888/RHello"); 
             System.out.println(rhello.helloWorld()); 
-            System.out.println(rhello.sayHelloToSomeBody("熔岩")); 
+            System.out.println(rhello.sayHelloToSomeBody("熔岩"));
+           
+            //3次获取到的复杂对象地址不同，内容相同
+            for(int i=0;i<3;i++){
+            	 //set方法并不会影响到远端的状态
+	            rhello.getSomeObject().setValue(100d);
+	            System.out.println(rhello.getSomeObject());
+            }
         } catch (NotBoundException e) { 
             e.printStackTrace(); 
         } catch (MalformedURLException e) { 

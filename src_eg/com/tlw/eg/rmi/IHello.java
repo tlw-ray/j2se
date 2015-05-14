@@ -22,4 +22,6 @@ public interface IHello extends Remote {
      * @throws java.rmi.RemoteException 
      */ 
     public String sayHelloToSomeBody(String someBodyName) throws RemoteException; 
+    
+    public SomeObject getSomeObject() throws RemoteException;
 }
