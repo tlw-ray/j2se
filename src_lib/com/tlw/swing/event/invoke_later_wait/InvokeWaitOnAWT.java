@@ -13,7 +13,7 @@ import com.tlw.util.UtilUi;
  * @since 2015年6月9日
  * Cannot call invokeAndWait from the event dispatcher thread
  */
-public class InvokeWaiteOnAWT {
+public class InvokeWaitOnAWT {
 
 	public static void main(String[] args) {
 		MyButton myButton=new MyButton();

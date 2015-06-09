@@ -10,7 +10,7 @@ import com.tlw.util.UtilUi;
  * @author liwei.tang@magustek.com
  * @since 2015年6月9日
  */
-public class InvokeWaiteOnThread {
+public class InvokeWaitOnThread {
 
 	public static void main(String[] args) {
 		UtilUi.show(new MyButton(), 400, 300, "");
