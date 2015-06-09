@@ -1,4 +1,4 @@
-package com.tlw.swing.event.invoke_later_waite;
+package com.tlw.swing.event.invoke_later_wait;
 
 import java.lang.reflect.InvocationTargetException;
 
