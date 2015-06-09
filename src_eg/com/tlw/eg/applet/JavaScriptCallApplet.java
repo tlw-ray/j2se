@@ -1,5 +1,7 @@
 package com.tlw.eg.applet;
 
+import java.util.concurrent.ConcurrentMap;
+
 import javax.swing.JApplet;
 import javax.swing.JLabel;
 
@@ -13,7 +15,7 @@ public class JavaScriptCallApplet extends JApplet{
 	private static final long serialVersionUID = -1184152538470519185L;
 	JLabel label=new JLabel("Label!");
 	public JavaScriptCallApplet(){
-		add(label);
+		add(label);ConcurrentMap< ?, ?> c;
 	}
 	public void setLabelText(String param){
 		label.setText(param);
