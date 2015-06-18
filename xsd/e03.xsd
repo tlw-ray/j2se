@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema 
+	xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.example.org/e03"
+	xmlns:tns="http://www.example.org/e03" 
+	elementFormDefault="qualified">
+	<!-- 目录模型 -->
+	<element name="root" type="tns:subDir">
+	</element>
+
+	<complexType name="subDir">
+		<sequence minOccurs="0" maxOccurs="unbounded">
+			<element name="subDir" type="tns:subDir"></element>
+		</sequence>
+		<attribute name="name" type="string" use="required"></attribute>
+	</complexType>
+	
+</schema>

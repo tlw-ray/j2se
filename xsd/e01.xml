@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:e01 xmlns:tns="http://www.example.org/e01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/e01 e01.xsd ">
+Hello world!
+</tns:e01>

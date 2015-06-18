@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/e04" xmlns:tns="http://www.example.org/e04" elementFormDefault="qualified">
+
+<!-- 文件目录模型 -->
+
+	<element name="fileSystem" type="tns:fileSystem"></element>
+	
+	<complexType name="fileSystem">
+		<sequence>
+			<group ref="tns:dirs" minOccurs="0" maxOccurs="unbounded"></group>
+			<group ref="tns:files" minOccurs="0" maxOccurs="unbounded"></group>
+		</sequence>
+	</complexType>
+	
+	<group name="dirs">
+		<sequence>
+			<element name="dir" type="tns:dir"></element>
+		</sequence>
+	</group>
+	
+	<group name="files">
+		<sequence>
+			<element name="file" type="tns:file"></element>
+		</sequence>
+	</group>
+	
+	<complexType name="dir">
+		<sequence>
+			<group ref="tns:dirs" minOccurs="0" maxOccurs="unbounded"></group>
+			<group ref="tns:files" minOccurs="0" maxOccurs="unbounded"></group>
+		</sequence>
+		<attribute name="name" type="string"/>
+	</complexType>
+
+	<complexType name="file">
+		<attribute name="name" type="string"></attribute>
+		<attribute name="text" type="string"></attribute>
+	</complexType>
+
+</schema>

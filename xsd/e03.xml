@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:subDir
+xmlns:tns="http://www.example.org/e03" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.example.org/e03 e03.xsd ">
+	<tns:subDir>
+		<tns:subDir name="xxx"></tns:subDir>
+		<tns:subDir name="yyy"></tns:subDir>
+	</tns:subDir>
+</tns:subDir>

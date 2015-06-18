@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:e02Root xmlns:tns="http://www.example.org/e02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/e02 e02.xsd ">
+	<tns:e02Root>
+		<tns:e02Root>
+			<tns:e02Root></tns:e02Root>
+		</tns:e02Root>
+	</tns:e02Root>
+</tns:e02Root>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema 
+	xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.example.org/e02" 
+	xmlns:tns="http://www.example.org/e02" 
+	elementFormDefault="qualified">
+	
+<!-- 	元素迭代   -->
+<!-- 由于和根元素采用相同的元素所以只能最多有一个 -->
+	
+	<element name="e02Root" type="tns:e02Type"></element>
+	
+	<complexType name="e02Type">
+		<group ref="tns:e02GroupName" minOccurs="0" maxOccurs="1"></group>
+	</complexType>
+	
+	<group name="e02GroupName">
+		<all>
+			<element ref="tns:e02Root"></element>
+		</all>
+	</group>
+</schema>
