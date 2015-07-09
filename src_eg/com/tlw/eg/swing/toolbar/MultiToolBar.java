@@ -35,9 +35,6 @@ public class MultiToolBar {
 		JToolBar jtoolBar02=new JToolBar();
 		
 		JButton b1=new JButton("b1");
-		JButton b2=new JButton("b2");
-		JButton b3=new JButton("b3");
-		JButton b4=new JButton("b4");
 		
 		b1.addActionListener(new ActionListener(){
 			@Override
@@ -47,6 +44,7 @@ public class MultiToolBar {
 		});
 		
 		jtoolBar01.add(new AbstractAction(){
+			private static final long serialVersionUID = 1L;
 			{
 				putValue(NAME,"AA");
 			}
@@ -55,6 +53,7 @@ public class MultiToolBar {
 			}
 		});
 		jtoolBar01.add(new AbstractAction(){
+			private static final long serialVersionUID = 1L;
 			{
 				putValue(NAME,"BB");
 			}
@@ -64,6 +63,7 @@ public class MultiToolBar {
 		});
 		
 		jtoolBar02.add(new AbstractAction(){
+			private static final long serialVersionUID = 1L;
 			{
 				putValue(NAME,"CC");
 			}
@@ -72,6 +72,7 @@ public class MultiToolBar {
 			}
 		});
 		jtoolBar02.add(new AbstractAction(){
+			private static final long serialVersionUID = 1L;
 			{
 				putValue(NAME,"DD");
 			}
@@ -85,7 +86,7 @@ public class MultiToolBar {
 		
 		JToolBar jpanelToolBar=new JToolBar();
 		
-		
+		jpanelToolBar.add(b1);
 		jpanelToolBar.add(jtoolBar01);
 		jpanelToolBar.add(jtoolBar02);
 		
@@ -120,7 +121,7 @@ public class MultiToolBar {
 				
 			}
 		});
-		
+		frame.setSize(400, 300);
 		frame.setVisible(true);
 	}
 
