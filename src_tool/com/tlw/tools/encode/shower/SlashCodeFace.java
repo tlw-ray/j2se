@@ -401,7 +401,8 @@ public static final int TOP    = 0;
     * @param y the y coordinate of the area
     * @param width the width of the area
     * @param height the height of the area
-    * @param first the first component of the container to place
+    * @param first the first component of the container to pl
+    * ace
     * @param last the last component of the container to place
     */
    private void placethem(Container target, int x, int y, int width, int height,

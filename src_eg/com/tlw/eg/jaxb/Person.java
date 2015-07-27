@@ -23,9 +23,16 @@ public class Person {
 	 * @throws FileNotFoundException 
 	 */
 	public static void main(String[] args) throws Exception {
-		Person p1=new Person();
+		Person p1=new Person(){
+			public void calc(){
+				System.out.println(getName());
+			}
+		};
 		p1.setName("AAA");
 		p1.setAge(14);
+		
+		
+		
 		JAXBContext jc = JAXBContext.newInstance(com.tlw.eg.jaxb.Person.class);
 		Marshaller marshaller=jc.createMarshaller();
 		marshaller.marshal(p1, System.out);
