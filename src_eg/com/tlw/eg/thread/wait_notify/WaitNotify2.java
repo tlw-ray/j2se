@@ -15,9 +15,9 @@ public class WaitNotify2 {
 			public void run(){
 				synchronized(str){
 					try {
-						System.out.println("Thread1 start and wait...");
+						System.out.println(Thread.currentThread().getName()+" : start and wait...");
 						str.wait();
-						System.out.println("Thread1 notifyed...");
+						System.out.println(Thread.currentThread().getName()+" : notifyed...");
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}
@@ -30,7 +30,7 @@ public class WaitNotify2 {
 		new Thread(){
 			public void run(){
 				synchronized(str){
-					System.out.println("Thread2 start notify thread1...");
+					System.out.println(Thread.currentThread().getName()+" : start notify thread1...");
 					str.notify();
 				}
 			}

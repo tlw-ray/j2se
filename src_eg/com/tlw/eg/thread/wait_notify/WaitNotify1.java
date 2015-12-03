@@ -16,8 +16,11 @@ public class WaitNotify1 {
 //		str.wait();
 		
 		synchronized(str){
-			str.notify();
+			System.out.println("step1");
 			str.wait();
+			System.out.println("step2");	//当前线程已被阻塞所以无法执行到这里
+			str.notify();
+			System.out.println("step3");
 		}
 	}
 
