@@ -148,7 +148,7 @@ public class SlashCodeFace extends JApplet{
      JButton jButton3 = new JButton();
      /***核心方法***/
      ArrayList<JCheckBox> al=new ArrayList<JCheckBox>();
-     public static String[] encoderChs={"GB2312","ISO8859_1","UTF-8","UTF-16BE","UTF-16LE","GBK"};
+     public static String[] encoderChs={"GB2312","ISO8859_1","UTF-8","UTF-16BE","UTF-16LE"};
      public static String[] encoderTw={"GB2312","ISO8859_1"};
      public static String[] encoderJp={"UTF-8","UTF-16BE","UTF-16LE"};
      public static String[] encoderKor={};

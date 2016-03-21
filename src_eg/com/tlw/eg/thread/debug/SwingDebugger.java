@@ -17,6 +17,13 @@ public class SwingDebugger {
 	public static void main(String[] args) throws InstantiationException, IllegalAccessException {
 		final Debugger debugger=new Debugger();
 		
+		debugger.addStateChangeListener(new DebugStateChangedListener(){
+			@Override
+			public void stateChanged(DebugStateEvent stateEvent) {
+				System.out.println(stateEvent);
+			}
+		});
+		
 		JFrame frame=new JFrame();
 		frame.setLayout(new FlowLayout());
 		

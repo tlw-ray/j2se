@@ -11,6 +11,7 @@ import javax.swing.event.EventListenerList;
  */
 public class Debugger implements Runnable {
 	
+	protected DebugState oldState = DebugState.TERMINATED;
 	protected DebugState debugState = DebugState.TERMINATED;
 
 	protected Thread guiThread;
@@ -26,7 +27,7 @@ public class Debugger implements Runnable {
 	@Override
 	public void run() {
 		// DEBUG线程启动宣称进入DebugState.DEBUGGING状态
-		postStateChangedEvent(debugState, DebugState.DEBUGGING);
+		postStateChangedEvent();
 
 		for (long step : steps) {
 			if (breakPoints.contains(step) && debugState == DebugState.DEBUGGING) {
@@ -34,6 +35,7 @@ public class Debugger implements Runnable {
 				debugState = DebugState.SUSPEND;
 			}
 			if (debugState == DebugState.TERMINATED) {
+				postStateChangedEvent();
 				break;
 			} else if (debugState == DebugState.SUSPEND) {
 				if (guiThread != null) {
@@ -41,8 +43,7 @@ public class Debugger implements Runnable {
 				}
 
 				// 宣称进入静止态
-				postStateChangedEvent(debugState, DebugState.SUSPEND);
-				System.out.println("before wait lock...");
+				postStateChangedEvent();
 				// 挂起
 				synchronized (this) {
 					try {
@@ -53,22 +54,23 @@ public class Debugger implements Runnable {
 						e.printStackTrace();
 					}
 				}
-				System.out.println("after wait lock...");
 				// 挂起结束
 				if (debugState == DebugState.TERMINATED) {
+					postStateChangedEvent();
 					break;
 				} else if (debugState == DebugState.NEXTING) {
 					// 宣称进入nextStep态
-					postStateChangedEvent(debugState, DebugState.NEXTING);
+					postStateChangedEvent();
 					nextStep(step);
 					// 从挂起态进入停止态,唤醒GUI线程
 					if (guiThread != null) {
 						notifyGUIThread();
 					}
+					oldState = DebugState.NEXTING;
 					debugState = DebugState.SUSPEND;
 				} else if (debugState == DebugState.DEBUGGING) {
 					// 宣称进入运算态
-					postStateChangedEvent(debugState, DebugState.DEBUGGING);
+					postStateChangedEvent();
 					// 挂起结束后执行下一个cat
 					nextStep(step);
 					// 从挂起态进入停止态,唤醒GUI线程
@@ -76,7 +78,7 @@ public class Debugger implements Runnable {
 						notifyGUIThread();
 					}
 				} else {
-					postStateChangedEvent(debugState, DebugState.TERMINATED);
+					postStateChangedEvent();
 					throw new RuntimeException("Error state..." + debugState);
 				}
 			} else if (debugState == DebugState.DEBUGGING) {
@@ -100,17 +102,29 @@ public class Debugger implements Runnable {
 			notifyGUIThread();
 		}
 		// 发出事件变化消息
-		postStateChangedEvent(debugState, DebugState.TERMINATED);
+		postLastStateChangeEvent();
+	}
+	
+	private void postLastStateChangeEvent(){
+		if(debugState != DebugState.TERMINATED){
+			debugState = DebugState.TERMINATED;
+			postStateChangedEvent();
+		}
 	}
 	
 	private void doStart() {
+		
+		oldState = debugState;
+		debugState = DebugState.DEBUGGING;
+		
 		thread = new Thread(this);
 		thread.setName(thread.getName() + "-ModelDebugger");
 		thread.start();
 	}
 
 	private void doStop() {
-		// 标记线程为立即退出状态
+		
+		oldState = debugState;
 		debugState = DebugState.TERMINATED;
 
 		// 如果从DebugState.SUSPEND态进入需要先唤醒，否则后边的thread.join不会被执行
@@ -129,6 +143,8 @@ public class Debugger implements Runnable {
 	}
 
 	private void doPause() {
+		
+		oldState = debugState;
 		debugState = DebugState.SUSPEND;
 
 		// 这里阻塞一下GUI线程感受会更好
@@ -143,14 +159,20 @@ public class Debugger implements Runnable {
 	}
 
 	private void doResume() {
+		
+		oldState = debugState;
+		debugState = DebugState.DEBUGGING;
+		
 		synchronized (this) {
 			notify();
 		}
-		debugState = DebugState.DEBUGGING;
 	}
 
 	private void doStepOver() {
+		
+		oldState = debugState;
 		debugState = DebugState.NEXTING;
+		
 		synchronized (this) {
 			notify();
 		}
@@ -235,12 +257,11 @@ public class Debugger implements Runnable {
 		return debugState;
 	}
 
-	protected void postStateChangedEvent(DebugState from, DebugState to) {
-		debugState = to;
-
+	protected void postStateChangedEvent() {
+		
 		DebugStateEvent event = new DebugStateEvent(this);
-		event.setFrom(from);
-		event.setTo(to);
+		event.setFrom(oldState);
+		event.setTo(debugState);
 
 		for (DebugStateChangedListener listener : eventListenerList.getListeners(DebugStateChangedListener.class)) {
 			try {
@@ -249,6 +270,7 @@ public class Debugger implements Runnable {
 				ex.printStackTrace();
 			}
 		}
+		
 	}
 
 	public void addStateChangeListener(DebugStateChangedListener listener) {
