@@ -20,7 +20,8 @@ Description:
 public class EncodeShower extends JFrame{
 	private static final long serialVersionUID = 1L;
 	public static void main(String[] args) {
-		String str="xml   你好   123!！";
+		String str="123abc你好";
+		System.out.println(str);
 		str2byte(str,"GBK");
 		str2byte(str,"UTF-8");
 		str2byte(str,"UTF-16BE");

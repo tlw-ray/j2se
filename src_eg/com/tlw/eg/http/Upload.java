@@ -14,7 +14,7 @@ import java.net.URL;
 public class Upload {
 
 	public static void main(String[] args) throws Exception {
-		String urlStr = "http://127.0.0.1:8080";
+		String urlStr = "http://127.0.0.1:8201";
 		URL url = new URL(urlStr);
 		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 		conn.setRequestMethod("POST");
