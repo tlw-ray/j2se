@@ -1,0 +1,30 @@
+group 'com.tlw'
+version '1.0'
+
+allprojects{
+    repositories {
+        mavenLocal()
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+//    mavenCentral()
+    }
+}
+
+subprojects { subproj ->
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'eclipse'
+    apply plugin: 'maven'
+
+    group = 'com.tlw.j2se'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    version = '1.0'
+
+    [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
+
+    dependencies {
+        testCompile group: 'junit', name: 'junit', version: '4.12'
+    }
+}

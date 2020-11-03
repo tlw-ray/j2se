@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<address>
+<info type="addressbegin" id="aaaa@net263.com" name=" 【企业地址本】 " list="killam@sohu.com" parent="0"></info>
+<info type="closed" id="-1" name="未分配部门" parent="0" rank="1">
+	<info type="child" id="admin@magustek.com" name="admin " tel="" mobile="" bpcall="" fax="" parent="-1"></info>
+	<info type="child" id="sqbt@magustek.com" name="sqbt " tel="" mobile="" bpcall="" fax="" parent="-1"></info>
+	<info type="child" id="lina.he@magustek.com" name="何丽娜 " tel="" mobile="" bpcall="" fax="" parent="-1"></info>
+	<info type="child" id="xuedong.lu@magustek.com" name="卢学东 " tel="" mobile="" bpcall="" fax="" parent="-1"></info>
+	<info type="child" id="asklu@magustek.com" name="问庐 " tel="" mobile="" bpcall="" fax="" parent="-1"></info>
+	<info type="child" id="opr@magustek.com" name="行政部 " tel="" mobile="" bpcall="" fax="" parent="-1"></info>
+	<info type="child" id="yongjun.yang@magustek.com" name="杨永军 " tel="" mobile="" bpcall="" fax="" parent="-1"></info>
+	<info type="child" id="xiang.zhan@magustek.com" name="詹翔 " tel="" mobile="" bpcall="" fax="" parent="-1"></info>
+	<info type="child" id="lifeng.zhang@magustek.com" name="张利峰 " tel="" mobile="" bpcall="" fax="" parent="-1"></info>
+</info>
+<info type="closed" id="2" name="工程部 " parent="0" rank="1" >
+<info type="child" id="changbao.chen@magustek.com" name="陈长抱" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+<info type="child" id="xiangjie.cheng@magustek.com" name="程相杰" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+<info type="child" id="weitao.huang@magustek.com" name="黄伟韬" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+<info type="child" id="hao.li@magustek.com" name="李浩" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+<info type="child" id="wei.li@magustek.com" name="李威" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+<info type="child" id="guofeng.liu@magustek.com" name="刘国峰" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+<info type="child" id="zhongqiu.liu@magustek.com" name="刘中秋" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+<info type="child" id="yingying.ma@magustek.com" name="马盈盈" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+<info type="child" id="lihua.qu@magustek.com" name="屈理华" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+<info type="child" id="tao.shen@magustek.com" name="沈涛" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+<info type="child" id="chao.sun@magustek.com" name="孙超" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+<info type="child" id="xingdong.tian@magustek.com" name="田兴东" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+<info type="child" id="yijia.wan@magustek.com" name="万怡佳" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+<info type="child" id="jun.wang@magustek.com" name="王军" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+<info type="child" id="dongchu.wu@magustek.com" name="吴冬初" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+<info type="child" id="zonghua.xie@magustek.com" name="谢宗华" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+<info type="child" id="xu.zhang@magustek.com" name="张    旭" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+<info type="child" id="xiaoshi.zhang@magustek.com" name="张晓适" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+<info type="child" id="mingqiu.zhou@magustek.com" name="周明秋" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+<info type="child" id="lele.min@magustek.com" name="闵乐乐" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+<info type="child" id="feng.yu@magustek.com" name="於锋" tel="" mobile="" bpcall="" fax="" parent="2" >
+</info>
+</info>
+<info type="closed" id="1" name="品牌战略部 " parent="0" rank="1" >
+<info type="child" id="beili.cai@magustek.com" name="蔡蓓丽" tel="" mobile="" bpcall="" fax="" parent="1" >
+</info>
+<info type="child" id="tian.li@magustek.com" name="李恬" tel="" mobile="" bpcall="" fax="" parent="1" >
+</info>
+<info type="child" id="bsd@magustek.com" name="品牌战略部" tel="" mobile="" bpcall="" fax="" parent="1" >
+</info>
+<info type="child" id="xian.xu@magustek.com" name="徐贤" tel="" mobile="" bpcall="" fax="" parent="1" >
+</info>
+</info>
+<info type="closed" id="3" name="应用软件开发部 " parent="0" rank="1" >
+<info type="child" id="lingming.bao@magustek.com" name="鲍灵铭" tel="" mobile="" bpcall="" fax="" parent="3" >
+</info>
+<info type="child" id="wei.cai@magustek.com" name="蔡巍" tel="" mobile="" bpcall="" fax="" parent="3" >
+</info>
+<info type="child" id="hai.chen@magustek.com" name="陈海" tel="" mobile="" bpcall="" fax="" parent="3" >
+</info>
+<info type="child" id="xiaochun.chen@magustek.com" name="陈晓春" tel="" mobile="" bpcall="" fax="" parent="3" >
+</info>
+<info type="child" id="rule.e@magustek.com" name="额如乐" tel="" mobile="" bpcall="" fax="" parent="3" >
+</info>
+<info type="child" id="zhiyi.gao@magustek.com" name="高志毅" tel="" mobile="" bpcall="" fax="" parent="3" >
+</info>
+<info type="child" id="eryong.he@magustek.com" name="何二永" tel="" mobile="" bpcall="" fax="" parent="3" >
+</info>
+<info type="child" id="zicheng.li@magustek.com" name="李子成" tel="" mobile="" bpcall="" fax="" parent="3" >
+</info>
+<info type="child" id="xiangtao.liu@magustek.com" name="刘向涛" tel="" mobile="" bpcall="" fax="" parent="3" >
+</info>
+<info type="child" id="yi.sun@magustek.com" name="孙益" tel="" mobile="" bpcall="" fax="" parent="3" >
+</info>
+<info type="child" id="peng.tian@magustek.com" name="田鹏" tel="" mobile="" bpcall="" fax="" parent="3" >
+</info>
+<info type="child" id="weichao.wang@magustek.com" name="王伟超" tel="" mobile="" bpcall="" fax="" parent="3" >
+</info>
+<info type="child" id="xiangdong.wang@magustek.com" name="王向东" tel="" mobile="" bpcall="" fax="" parent="3" >
+</info>
+<info type="child" id="chao.wu@magustek.com" name="吴超" tel="" mobile="" bpcall="" fax="" parent="3" >
+</info>
+<info type="child" id="jingbiao.wu@magustek.com" name="吴景彪" tel="" mobile="" bpcall="" fax="" parent="3" >
+</info>
+<info type="child" id="youhui.wu@magustek.com" name="吴友辉" tel="" mobile="" bpcall="" fax="" parent="3" >
+</info>
+<info type="child" id="jiaxin.xu@magustek.com" name="徐佳欣" tel="" mobile="" bpcall="" fax="" parent="3" >
+</info>
+<info type="child" id="yuan.xu@magustek.com" name="徐渊" tel="" mobile="" bpcall="" fax="" parent="3" >
+</info>
+<info type="child" id="ard@magustek.com" name="应用软件开发部" tel="" mobile="" bpcall="" fax="" parent="3" >
+</info>
+</info>
+<info type="closed" id="4" name="人事行政部 " parent="0" rank="1" >
+<info type="child" id="jiamiao.li@magustek.com" name="厉佳苗" tel="" mobile="" bpcall="" fax="" parent="4" >
+</info>
+<info type="child" id="jing.liu@magustek.com" name="刘静" tel="" mobile="" bpcall="" fax="" parent="4" >
+</info>
+<info type="child" id="yiqiong.wang@magustek.com" name="王一琼" tel="" mobile="" bpcall="" fax="" parent="4" >
+</info>
+<info type="child" id="hr@magustek.com" name="行政人事部" tel="" mobile="" bpcall="" fax="" parent="4" >
+</info>
+<info type="child" id="jia.zou@magustek.com" name="邹佳" tel="" mobile="" bpcall="" fax="" parent="4" >
+</info>
+</info>
+<info type="closed" id="5" name="财务部 " parent="0" rank="1" >
+<info type="child" id="yishi.jiang@magustek.com" name="姜一石" tel="" mobile="" bpcall="" fax="" parent="5" >
+</info>
+<info type="child" id="jiejun.liu@magustek.com" name="刘杰君" tel="" mobile="" bpcall="" fax="" parent="5" >
+</info>
+<info type="child" id="zhiyong.mao@magustek.com" name="毛志勇" tel="" mobile="" bpcall="" fax="" parent="5" >
+</info>
+<info type="child" id="hongmei.zhang@magustek.com" name="张红梅" tel="" mobile="" bpcall="" fax="" parent="5" >
+</info>
+</info>
+<info type="closed" id="6" name="系统软件开发部 " parent="0" rank="1" >
+<info type="child" id="shaohua.cheng@magustek.com" name="程少华" tel="" mobile="" bpcall="" fax="" parent="6" >
+</info>
+<info type="child" id="jing.jin@magustek.com" name="金晶" tel="" mobile="" bpcall="" fax="" parent="6" >
+</info>
+<info type="child" id="biao.tan@magustek.com" name="谭彪" tel="" mobile="" bpcall="" fax="" parent="6" >
+</info>
+<info type="child" id="liwei.tang@magustek.com" name="唐力伟" tel="" mobile="" bpcall="" fax="" parent="6" >
+</info>
+<info type="child" id="shenghui.wang@magustek.com" name="王胜辉" tel="" mobile="" bpcall="" fax="" parent="6" >
+</info>
+<info type="child" id="srd@magustek.com" name="系统软件开发部" tel="" mobile="" bpcall="" fax="" parent="6" >
+</info>
+<info type="child" id="jiang.xu@magustek.com" name="徐江" tel="" mobile="" bpcall="" fax="" parent="6" >
+</info>
+<info type="child" id="koufeng.ye@magustek.com" name="叶扣峰" tel="" mobile="" bpcall="" fax="" parent="6" >
+</info>
+</info>
+<info type="closed" id="7" name="市场部 " parent="0" rank="1" >
+<info type="child" id="jie.cao@magustek.com" name="曹杰" tel="" mobile="" bpcall="" fax="" parent="7" >
+</info>
+<info type="child" id="changzhong.chen@magustek.com" name="陈昌中" tel="" mobile="" bpcall="" fax="" parent="7" >
+</info>
+<info type="child" id="guozhu.fang@magustek.com" name="方国柱" tel="" mobile="" bpcall="" fax="" parent="7" >
+</info>
+<info type="child" id="xiang.he@magustek.com" name="何翔" tel="" mobile="" bpcall="" fax="" parent="7" >
+</info>
+<info type="child" id="haojie.jin@magustek.com" name="金豪杰" tel="" mobile="" bpcall="" fax="" parent="7" >
+</info>
+<info type="child" id="ping.li@magustek.com" name="李平" tel="" mobile="" bpcall="" fax="" parent="7" >
+</info>
+<info type="child" id="hui.lu@magustek.com" name="陆慧" tel="" mobile="" bpcall="" fax="" parent="7" >
+</info>
+<info type="child" id="yulin.niu@magustek.com" name="牛玉林" tel="" mobile="" bpcall="" fax="" parent="7" >
+</info>
+<info type="child" id="guoxin.shen@magustek.com" name="沈国新" tel="" mobile="" bpcall="" fax="" parent="7" >
+</info>
+<info type="child" id="fei.sun@magustek.com" name="孙飞" tel="" mobile="" bpcall="" fax="" parent="7" >
+</info>
+<info type="child" id="bin.zhang@magustek.com" name="张斌" tel="" mobile="" bpcall="" fax="" parent="7" >
+</info>
+<info type="child" id="tao.zhang@magustek.com" name="张涛" tel="" mobile="" bpcall="" fax="" parent="7" >
+</info>
+<info type="child" id="qian.zhao@magustek.com" name="赵谦" tel="" mobile="" bpcall="" fax="" parent="7" >
+</info>
+</info>
+<info type="closed" id="8" name="麦杰环境 " parent="0" rank="1" >
+<info type="child" id="jia.chen@magustek.com" name="陈佳" tel="" mobile="" bpcall="" fax="" parent="8" >
+</info>
+<info type="child" id="xinjuan.hu@magustek.com" name="胡新娟" tel="" mobile="" bpcall="" fax="" parent="8" >
+</info>
+<info type="child" id="hongfen.li@magustek.com" name="李洪芬" tel="" mobile="" bpcall="" fax="" parent="8" >
+</info>
+<info type="child" id="huaiyong.li@magustek.com" name="李怀勇" tel="" mobile="" bpcall="" fax="" parent="8" >
+</info>
+<info type="child" id="kai.li@magustek.com" name="李凯" tel="" mobile="" bpcall="" fax="" parent="8" >
+</info>
+<info type="child" id="dianqing.liu@magustek.com" name="刘殿卿" tel="" mobile="" bpcall="" fax="" parent="8" >
+</info>
+<info type="child" id="yang.liu@magustek.com" name="刘洋" tel="" mobile="" bpcall="" fax="" parent="8" >
+</info>
+<info type="child" id="zheng.qin@magustek.com" name="秦政" tel="" mobile="" bpcall="" fax="" parent="8" >
+</info>
+<info type="child" id="lei.sun@magustek.com" name="孙蕾" tel="" mobile="" bpcall="" fax="" parent="8" >
+</info>
+<info type="child" id="heping.wang@magustek.com" name="王和平" tel="" mobile="" bpcall="" fax="" parent="8" >
+</info>
+<info type="child" id="guoxiang.wu@magustek.com" name="吴国祥" tel="" mobile="" bpcall="" fax="" parent="8" >
+</info>
+<info type="child" id="hongyu.xiao@magustek.com" name="肖宏宇" tel="" mobile="" bpcall="" fax="" parent="8" >
+</info>
+<info type="child" id="yan.xu@magustek.com" name="许岩" tel="" mobile="" bpcall="" fax="" parent="8" >
+</info>
+<info type="child" id="lizhong.zhang@magustek.com" name="张利忠" tel="" mobile="" bpcall="" fax="" parent="8" >
+</info>
+</info>
+<info type="closed" id="9" name="内蒙古麦杰 " parent="0" rank="1" >
+<info type="child" id="btmk@magustek.com" name="巴吐蒙苦" tel="" mobile="" bpcall="" fax="" parent="9" >
+</info>
+<info type="child" id="zhiyue.guo@magustek.com" name="郭志悦" tel="" mobile="" bpcall="" fax="" parent="9" >
+</info>
+<info type="child" id="jia.hao@magustek.com" name="郝嘉" tel="" mobile="" bpcall="" fax="" parent="9" >
+</info>
+<info type="child" id="hui.li@magustek.com" name="李慧" tel="" mobile="" bpcall="" fax="" parent="9" >
+</info>
+</info>
+<info type="maillistbegin" id=" " name=" 【邮件列表】 " list=" " parent="0"></info>
+</address>

@@ -1,0 +1,6 @@
+//rootProject.name = 'j2se'
+
+
+include 'library'
+include 'example'
+include 'tool'
